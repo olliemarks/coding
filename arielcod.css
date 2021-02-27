@@ -1,0 +1,137 @@
+@import url("https://pro.fontawesome.com/releases/v5.15.2/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap');
+
+/*  ARIEL FIRMA */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(2.5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(2.5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.ariel-fir {
+  margin: auto;
+  margin-top: 25px;
+  width: 300px;
+  height: 200px;
+  background: #0a0a0a;
+  border: 14px solid #0a0a0a;
+  outline: 1px solid #545b67;
+  outline-offset: -13px;
+  text-transform: uppercase;
+  color: white;
+  overflow: hidden;
+}
+
+.arielf-img {
+  width: 300px;
+  height: 200px;
+  background: url(https://i.imgur.com/T880aBy.png);
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  transition: 0.6s ease;
+  -webkit-transition: 0.6s ease;
+}
+
+.ariel-fir:hover .arielf-img {
+  filter: grayscale(1);
+  opacity: 0.45;
+  transition: 0.6s ease;
+}
+
+.arielf-nombre {
+  position: relative;
+  bottom: 105px;
+  left: 40px;
+  font: 800 22px "Poppins";
+  text-shadow: 1px 1px 1px #000;
+  color: #cccccc;
+}
+
+.arielf-frase {
+  position: relative;
+  width: 227px;
+  height: 10px;
+  bottom: 107px;
+  left: 40px;
+  text-align: center;
+  font: 400 8px Calibri;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+
+.ariel-frase .afr1 {
+  transform: translateX(0px);
+  transition: 0.25s ease;
+  transition-delay: 0.25s;  
+}
+
+.ariel-frase .afr2 {
+  transform: translateX(2px);
+  transition: 0.25s ease;
+}
+
+.ariel-fir:hover .afr1 {
+  transform: translateX(200px);
+  transition: 0.25s ease;
+}
+
+.ariel-fir:hover .afr2 {
+  transform: translateX(50px);
+  transform: translateY(-9px);
+  transition: 0.25s ease;
+  transition-delay: 0.25s;
+}
+
+.arielf-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 120px;
+  left: 130px;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #171717;
+  background: #00000066;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+}
+
+.arielf-icon i {
+  font-size: 20px;
+  transform: rotate(-45deg);
+  color: #909eb3;
+}
+
+.ariel-fir:hover .arielf-icon {
+  opacity: 1;
+  border: 3px solid #545b67;
+  transition: 0.6s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+}
+
+.afr-mov {
+    animation: bounce 1.3s linear infinite;
+  -webkit-animation: bounce 1.3s linear infinite;
+}
