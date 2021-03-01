@@ -503,7 +503,7 @@ font-size: 22px;
 
 .acractual, .acrpasado, .acrglobal {
   overflow: auto;
-  background: BLACK;
+  background: black;
   padding: 20px;
   border: 10px solid #060606c9;
   outline: 1px solid #171717;
@@ -520,7 +520,7 @@ font-size: 22px;
 .ariel-cr mes {
   display: block;
   text-align: right;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font: 800 22px Playfair Display;
   letter-spacing: 1px;
 }
