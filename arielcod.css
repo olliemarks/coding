@@ -469,3 +469,97 @@ font-size: 22px;
   margin-top: 15px;
   padding-left: 15px;
   font-size: 10.5px;}
+
+/* ARIEL CRONO */
+
+.ariel-cr {
+  display: grid;
+  margin: auto;
+  width: 800px;
+  margin-top: 25px;
+  color: #c5c5c5;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px 15px;
+  grid-template-areas:
+    "ACTUAL PASADO"
+    "GLOBALES PASADO";
+}
+
+.acractual { 
+  max-height: 290px;
+  grid-area: ACTUAL;
+}
+
+.acrpasado { 
+  height: 655px;
+  grid-area: PASADO;
+}
+
+.acrglobal { 
+  max-height: 290px;
+  grid-area: GLOBALES;
+}
+
+.acractual, .acrpasado, .acrglobal {
+  overflow: auto;
+  background: BLACK;
+  padding: 20px;
+  border: 10px solid #060606c9;
+  outline: 1px solid #171717;
+}
+
+.acractual::-webkit-scrollbar, .acrpasado::-webkit-scrollbar, .acrglobal::-webkit-scrollbar {
+  width: 1px;
+}
+
+.acractual::-webkit-scrollbar-thumb, .acrpasado::-webkit-scrollbar-thumb, .acrglobal::-webkit-scrollbar-thumb {
+  background: #545b67;
+}
+
+.ariel-cr mes {
+  display: block;
+  text-align: right;
+  margin-bottom: 20px;
+  font: 800 22px Playfair Display;
+  letter-spacing: 1px;
+}
+
+.ariel-cr mes b {
+  color: #545b67;
+  font-size: 22px;
+}
+
+.ariel-cr tema {
+  display: flex;
+  height: 40px;
+}
+
+.ariel-cr tema dia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #171717;
+  background: #00000066;
+  width: 40px;
+  height: 40px;
+  font: 800 15px Arial;
+  color: #545b67;
+}
+
+.ariel-cr titulo {
+  margin-top: 8px;
+  margin-left: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font: 400 8px Calibri;
+  letter-spacing: 1.5px;
+  line-height: 14px;
+}
+
+.ariel-cr titulo a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  font: 800 9px Arial;
+  color: #5b6679;
+}
